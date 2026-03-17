@@ -1,0 +1,1788 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Unbounded:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; /* Важно для правильных расчетов ширины */
+}
+
+
+/* ДИЗАЙН СПИСКА И ШАПКИ САЙТА */
+
+header {
+    font-size: 0;  /* Убирает пробелы между inline-block элементами */
+}
+body header img {
+    margin-left: 90px;
+    margin-top: 60px;
+    max-width: 94px;
+}
+
+header img,
+header nav {
+    display: inline-block;
+    vertical-align: middle;  /* Выравнивание по вертикали */
+    font-size: 17px;         
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 60px 0 0 150px;      /* Отступ слева от логотипа */
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 70px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover {
+    color:rgb(121, 121, 121);
+    transition: 0.5s ease;
+}
+
+/* ДИЗАЙН HERO-БЛОКА */
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero .project-name {
+    font-size: 18px;
+    margin-left: 130px;
+    margin-top: 130px;
+    color: black;
+    letter-spacing: 40%;
+}
+.hero .number {
+    color: black;
+    margin-left: 90px;
+    margin-top: 25px;
+
+}
+.hero h1 {
+    font-size: 58px;
+    font-weight: 400;
+    width: 750px;
+    margin-left: 130px;
+    margin-top: -20px;
+    line-height: 100%;
+}
+.hero .start_work {
+    margin-top: 30px;
+    margin-left: 130px;
+    padding: 11px 18px;
+    display:inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.5s ease;
+    font-weight: 300;
+}
+.hero .start_work:hover {
+    background: rgb(72, 72, 72);
+}
+
+.hero .about {
+    margin-top: 30px;
+    margin-left: 15px;
+    padding: 11px 18px;
+    display:inline-block;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid;
+    transition: 0.5s ease;
+    font-weight: 300;
+}
+.hero .about:hover {
+    background: black;
+    color: white;
+}
+.hero .line {
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+}
+.hero .moon_info {
+    font-size: 13px;
+    width: 450px;
+    text-align: justify;
+    margin-left: 530px;
+    position: absolute;
+    margin-top: 40px;
+}
+.hero .line_2 {
+    width: 350px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 680px;
+}
+.hero .moon {
+    width: 350px;
+    float: right;
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+}
+.hero .about_Space_Industries {
+    font-family: 'Sansation', sans-serif;
+    font-weight: 200;
+    position: absolute;
+    margin-top: 165px;
+    color: #A1A1A1;
+    z-index: 1;
+    font-size: 15px;
+    width: 550px;
+    text-align: justify;
+    margin-left: 30px;
+}
+.hero .black_block {
+    width: 750px;
+    margin-top: 145px;
+    z-index: 0;
+}
+
+/* ОПИСАНИЕ БЛОКА КОНЦЕПЦИЙ */
+
+.concepts {
+    margin-top: -15px;
+    background: black;
+    color: white;
+}
+.info_table {
+    border: 1px solid white;
+    border-radius: 40px;
+    height: 597px;
+    width: 1300px;
+    margin-left: 60px;
+}
+.about_concepts {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 200;
+    width: 380px;
+    margin-left: 550px;
+    margin-top: 80px;
+}
+.corners {
+    position: absolute;
+    margin-left: 520px;
+    margin-top: 70px;
+    width: 430px;
+}
+
+/* ФИЗИКА */
+.physics {
+    position: absolute;
+    width: 370px;
+    height: 180px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+.physics h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.physics p {
+    font-size: 17px;
+    font-family: 'Sansation', sans-serif;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+/* ХИМИЯ */
+.chemistry {
+    position: absolute;
+    width: 370px;
+    height: 180px;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-top: 180px;
+    margin-left: 450px;
+}
+.chemistry h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.chemistry p {
+    font-size: 16px;
+    font-family: 'Sansation', sans-serif;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+/* КВАТНОВАЯ ФИЗИКА */
+.quantum_physics {
+    position: absolute;
+    width: 370px;
+    height: 180px;
+    background: #D9D9D9;
+    border-radius: 30px;
+    margin-left: 880px;
+    margin-top: 400px;
+}
+.quantum_physics h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: black;
+}
+.quantum_physics p{
+    font-size: 17px;
+    font-family: 'Sansation', sans-serif;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-top: 15px;
+    color: black;
+    width: 280px;
+}
+
+/* ФОТОГРАФИИ К ТАБЛИЦЕ */
+
+.atom {
+    position: absolute;
+    width: 150px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-left: 1060px;
+    margin-top: 20px;
+}
+.sphere {
+    position: absolute;
+    width: 220px;
+    padding: 20px;
+    margin-left: 290px;
+    margin-top: 60px;
+    z-index: 0;
+}
+.black_hole {
+    position: absolute;
+    width: 240px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-top: 217px;
+    margin-left: 20px;
+}
+.quantum_field {
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-left: 520px;
+    margin-top: 395px;
+}
+
+/* О SPACE INDUSTRIES */
+
+.about_us {
+    margin-top: -10px;
+    background: black;
+    color: white;
+}
+.background_photo {
+    background: url(/БЕТА-ВЕРСИЯ/IMAGES/background\ \(who\ we\ are\).svg);
+    width: 1120px;
+    height: 493px;
+    margin-left: 140px;
+    border-radius: 30px;
+}
+.background_photo h2 {
+    font-size: 60px;
+    font-weight: 200;
+    margin-left: 70px;
+    padding-top: 160px;
+}
+.background_photo p {
+    font-size: 20px;
+    font-weight: 100;
+    width: 490px;
+    text-align: justify;
+    margin-left: 560px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.methods {
+    background: black;
+}
+.methods img {
+    width: 1250px;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+/* ВЫБОР ГАЛАКТИК */
+
+.new_galaxies {
+    background: black;
+    color: white;
+    padding: 100px 90px;
+}
+
+.galaxies_container {
+    margin-left: 80px;
+}
+
+.text {
+    width: 700px;
+    float: left
+}
+.text h2 {
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 26%;
+    line-height: 106%;
+    width: 690px;
+}
+.text hr {
+    width: 570px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+.text p {
+    font-size: 15px;
+    font-weight: 200;
+    text-align: justify;
+    width: 570px;
+    letter-spacing: 26%;
+    line-height: 106%;
+}
+
+/* СПИСОК ГАЛАКТИК */
+
+/* ГАЛАКТИКА ТРЕУГОЛЬНИКА */
+
+.triangle_galaxy {
+    width: 470px;
+    height: 170px;
+    color: white;
+    border: 1px solid #7B7B7B;
+    border-radius: 18px;
+    background: linear-gradient(45deg, #101010, #131313);
+    margin-left: 700px;
+}
+
+.triangle_galaxy p {
+    font-size: 12px;
+    font-weight: 200;
+    width: 370px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 30px;
+    
+}
+.triangle_galaxy h4 {
+    font-size: 21px;
+    font-weight: 300;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: -25px;
+    line-height: 97%;
+}
+
+.triangle_galaxy a {
+    width: 110px;
+    height: 30px;
+    background: white;
+    color: black;
+    font-size: 12px;
+    padding: 7px 10px;
+    margin-left: 300px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px white solid;
+    transition: 0.5s ease;
+}
+.triangle_galaxy a:hover {
+    background: #101010;
+    border: 1px solid white;
+    color: white;
+}
+
+/* ГАЛАКТИКА СОМБРЕРРО */
+
+.galaxy_sombrero {
+    width: 470px;
+    height: 170px;
+    color: white;
+    border: 1px solid #7B7B7B;
+    border-radius: 18px;
+    background: linear-gradient(45deg, #101010, #131313);
+    margin-left: 700px;
+    margin-top: 30px;
+}
+
+.galaxy_sombrero p {
+    font-size: 12px;
+    font-weight: 200;
+    width: 370px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 30px;
+    
+}
+.galaxy_sombrero h4 {
+    font-size: 21px;
+    font-weight: 300;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: -25px;
+    line-height: 97%;
+}
+
+.galaxy_sombrero a {
+    width: 110px;
+    height: 30px;
+    background: #101010;
+    color: #747474;
+    font-size: 12px;
+    padding: 7px 10px;
+    margin-left: 300px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px #747474 solid;
+    transition: 0.5s ease;
+}
+.galaxy_sombrero a:hover {
+    background: #101010;
+    border: 1px solid white;
+    color: white;
+}
+
+/* АНДРОМЕДА */
+
+.andromeda_galaxy {
+    width: 470px;
+    height: 170px;
+    color: white;
+    border: 1px solid #7B7B7B;
+    border-radius: 18px;
+    background: linear-gradient(45deg, #101010, #131313);
+    margin-left: 700px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.andromeda_galaxy p {
+    font-size: 12px;
+    font-weight: 200;
+    width: 370px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 30px;
+    
+}
+.andromeda_galaxy h4 {
+    font-size: 21px;
+    font-weight: 300;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: -25px;
+    line-height: 97%;
+}
+
+.andromeda_galaxy a {
+    width: 110px;
+    height: 30px;
+    background: white;
+    color: black;
+    font-size: 12px;
+    padding: 7px 10px;
+    margin-left: 300px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px white solid;
+    transition: 0.5s ease;
+}
+.andromeda_galaxy a:hover {
+    background: #101010;
+    border: 1px solid white;
+    color: white;
+}
+
+/* МЛЕЧНЫЙ ПУТЬ РОДНО   Й */
+
+.milky_way {
+    width: 470px;
+    height: 170px;
+    color: white;
+    border: 1px solid #7B7B7B;
+    border-radius: 18px;
+    background: linear-gradient(45deg, #101010, #131313);
+    margin-left: 200px;
+    margin-top: -171px;
+    display: inline-block;
+    position: absolute;
+}
+
+.milky_way p {
+    font-size: 12px;
+    font-weight: 200;
+    width: 370px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 30px;
+    
+}
+.milky_way h4 {
+    font-size: 21px;
+    font-weight: 300;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: -25px;
+    line-height: 97%;
+}
+
+.milky_way a {
+    width: 110px;
+    height: 30px;
+    background: #101010;
+    color: #747474;
+    font-size: 12px;
+    padding: 7px 10px;
+    margin-left: 300px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px #747474 solid;
+    transition: 0.5s ease;
+}
+.milky_way a:hover {
+    background: #101010;
+    border: 1px solid white;
+    color: white;
+}
+
+/* ФУТЕР САЙТА СО СПИСКОМ НАВИГАЦИИ */
+
+footer {
+    height: 20px;
+    padding-top: 40px;
+
+}
+
+footer nav {
+    margin-left: 80px;
+}
+
+footer nav ul {
+    list-style: none;
+    position: absolute;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-right: 70px;
+    margin-bottom: 40px;
+}
+footer nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease;
+    font-weight: 200;
+    z-index: 1;
+    
+}
+footer nav ul li a:hover {
+    font-weight: 400;
+}
+
+/* ===== АДАПТИВНЫЙ ДИЗАЙН ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ ===== */
+
+
+/* ЗАЩИТА!!!  ДЛЯ ДЕКСТОПА - отключаем мобильные стили на больших экранах */
+@media screen and (min-width: 1025px) {
+    /* Возвращаем исходные стили для десктопа */
+    
+    /* БЛОК КОНЦЕПЦИЙ - возвращаем исходные размеры */
+    .concepts {
+        padding: 130px 80px;
+    }
+    
+    .info_table {
+        height: 597px;
+        border: 1px solid white;
+    }
+    
+    .about_concepts {
+        position: absolute;
+        width: 380px;
+        margin-left: 550px;
+        margin-top: 80px;
+    }
+    
+    .physics {
+        position: absolute;
+        width: 370px;
+        height: 180px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+    .chemistry {
+        position: absolute;
+        width: 370px;
+        height: 180px;
+        margin-left: 450px;
+        margin-top: 180px;
+    }
+    
+    .quantum_physics {
+        position: absolute;
+        width: 370px;
+        height: 180px;
+        margin-left: 880px;
+        margin-top: 400px;
+    }
+    
+    /* ГАЛАКТИКИ - возвращаем исходное позиционирование */
+    .new_galaxies {
+        padding: 100px 90px;
+        display: block;
+    }
+    
+    .text {
+        width: 700px;
+        float: left;
+    }
+    
+    .triangle_galaxy {
+        width: 470px;
+        margin-left: 700px;
+    }
+    
+    .galaxy_sombrero {
+        width: 470px;
+        margin-left: 700px;
+    }
+    
+    .andromeda_galaxy {
+        width: 470px;
+        margin-left: 700px;
+    }
+    
+    .milky_way {
+        width: 470px;
+        margin-left: 200px;
+        margin-top: -171px;
+        position: absolute;
+    }
+}
+
+/* Планшеты (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    
+    /* ШАПКА */
+    header {
+        padding: 20px 40px;
+    }
+    
+    body header img {
+        margin-left: 0;
+        margin-top: 0;
+        max-width: 80px;
+    }
+    
+    header nav ul {
+        margin: 0;
+        gap: 30px;
+    }
+    
+    header nav ul li {
+        margin-right: 0;
+    }
+    
+    /* HERO-БЛОК */
+    .hero .project-name {
+        margin-left: 40px;
+        margin-top: 80px;
+    }
+    
+    .hero .number {
+        margin-left: 40px;
+    }
+    
+    .hero h1 {
+        font-size: 48px;
+        width: 600px;
+        margin-left: 40px;
+    }
+    
+    .hero .start_work,
+    .hero .about {
+        margin-left: 40px;
+    }
+    
+    .hero .moon_info {
+        width: 350px;
+        margin-left: 400px;
+    }
+    
+    .hero .line_2 {
+        margin-left: 520px;
+        width: 280px;
+    }
+    
+    .hero .about_Space_Industries {
+        width: 450px;
+    }
+    
+    .hero .black_block {
+        width: 600px;
+    }
+    
+    /* КОНЦЕПЦИИ */
+    .concepts {
+        padding: 80px 40px;
+    }
+    
+    .info_table {
+        height: auto;
+        min-height: 597px;
+    }
+    
+    .about_concepts {
+        margin-left: 400px;
+        width: 300px;
+    }
+    
+    .corners {
+        margin-left: 380px;
+        width: 350px;
+    }
+    
+    .physics,
+    .chemistry,
+    .quantum_physics {
+        width: 280px;
+    }
+    
+    .physics {
+        margin-left: 20px;
+    }
+    
+    .chemistry {
+        margin-left: 320px;
+    }
+    
+    .quantum_physics {
+        margin-left: 600px;
+    }
+    
+    .atom {
+        margin-left: 720px;
+    }
+    
+    .sphere {
+        margin-left: 200px;
+    }
+    
+    .black_hole {
+        margin-left: 20px;
+    }
+    
+    .quantum_field {
+        margin-left: 350px;
+        width: 250px;
+    }
+    
+    /* О НАС */
+    .background_photo {
+        width: 90%;
+        margin-left: 5%;
+        height: 400px;
+        background-size: cover;
+    }
+    
+    .background_photo h2 {
+        font-size: 48px;
+        padding-top: 100px;
+    }
+    
+    .background_photo p {
+        width: 350px;
+        margin-left: 45%;
+        font-size: 16px;
+    }
+    
+    /* МЕТОДЫ */
+    .methods img {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    /* ГАЛАКТИКИ */
+    .new_galaxies {
+        padding: 80px 40px;
+    }
+    
+    .text {
+        width: 500px;
+    }
+    
+    .text h2 {
+        font-size: 40px;
+        width: 500px;
+    }
+    
+    .text hr,
+    .text p {
+        width: 450px;
+    }
+    
+    .triangle_galaxy,
+    .galaxy_sombrero,
+    .andromeda_galaxy {
+        width: 400px;
+        margin-left: 500px;
+    }
+    
+    .milky_way {
+        width: 400px;
+        margin-left: 50px;
+    }
+}
+
+/* Телефоны (до 768px) */
+@media screen and (max-width: 768px) {
+
+    * {
+        max-width: 100%;
+    }
+
+    html, body {
+    overflow-x: hidden; /* Запрещает горизонтальный скролл */
+    max-width: 100%;
+    position: relative;
+}
+    
+    /* ШАПКА */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    body header img {
+        margin: 0 0 20px 0;
+        max-width: 120px;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 0;
+    }
+    
+    header nav ul li {
+        margin: 0;
+    }
+    
+    header nav ul li a {
+        font-size: 14px;
+    }
+    
+    /* HERO-БЛОК */
+    .hero {
+        overflow: hidden;
+    }
+    
+    .hero .project-name,
+    .hero .number,
+    .hero h1,
+    .hero .start_work,
+    .hero .about {
+        margin-left: 20px;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .hero .project-name {
+        margin-top: 60px;
+        font-size: 14px;
+    }
+    
+    .hero .number {
+        margin-top: 15px;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+        width: 90%;
+        margin-top: 10px;
+    }
+    
+    .hero .start_work,
+    .hero .about {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .hero .line {
+        margin-top: 30px;
+    }
+    
+    .hero .moon_info {
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+        left: auto;
+        top: auto;
+        margin-left: 20px;
+        font-size: 11px;
+    }
+    
+    .hero .line_2 {
+        display: none; /* Скрываем на мобильных */
+    }
+    
+    .hero .moon {
+        float: none;
+        width: 250px;
+        margin: 20px auto;
+        display: block;
+        position: relative;
+    }
+    
+    .hero .about_Space_Industries {
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+        left: auto;
+        top: auto;
+        font-size: 12px;
+        padding: 0 20px;
+    }
+    
+    .hero .black_block {
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    /* КОНЦЕПЦИИ */
+    .concepts {
+        padding: 60px 20px;
+    }
+    
+    .info_table {
+        border: none;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about_concepts {
+        position: relative;
+        width: 100%;
+        margin: 0 0 30px 0;
+        left: auto;
+        top: auto;
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    
+    .corners {
+        display: none; /* Скрываем сложные SVG на мобильных */
+    }
+    
+    .physics,
+    .chemistry,
+    .quantum_physics {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        left: auto;
+        top: auto;
+        padding: 20px;
+    }
+    
+    .physics {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .chemistry {
+        margin-top: 0;
+    }
+    
+    .quantum_physics {
+        margin-top: 0;
+    }
+    
+    .physics h3,
+    .chemistry h3,
+    .quantum_physics h3 {
+        font-size: 24px;
+        margin-left: 0;
+    }
+    
+    .physics p,
+    .chemistry p,
+    .quantum_physics p {
+        font-size: 14px;
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .atom,
+    .sphere,
+    .black_hole,
+    .quantum_field {
+        display: none; /* Скрываем декоративные элементы */
+    }
+    
+    /* О НАС */
+    .about_us {
+        margin-top: 0;
+    }
+    
+    .background_photo {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0;
+        height: auto;
+        padding: 40px 20px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .background_photo h2 {
+        font-size: 36px;
+        margin-left: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+    
+    .background_photo p {
+        position: relative;
+        width: 100%;
+        margin: 30px 0 0 0;
+        left: auto;
+        bottom: auto;
+        font-size: 14px;
+        padding: 0;
+    }
+    
+    /* МЕТОДЫ */
+    .methods {
+        padding: 40px 20px;
+    }
+    
+    .methods img {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    
+    /* ГАЛАКТИКИ */
+    .new_galaxies {
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .text {
+        width: 100%;
+        float: none;
+        margin-bottom: 40px;
+    }
+    
+    .text h2 {
+        font-size: 32px;
+        width: 100%;
+        letter-spacing: normal;
+    }
+    
+    .text hr {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .text p {
+        width: 100%;
+        letter-spacing: normal;
+    }
+    
+    .blocks_of_galaxies {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .triangle_galaxy,
+    .galaxy_sombrero,
+    .andromeda_galaxy,
+    .milky_way {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+        margin: 0;
+        position: relative;
+        display: block;
+        padding: 20px;
+    }
+    
+    .triangle_galaxy p,
+    .galaxy_sombrero p,
+    .andromeda_galaxy p,
+    .milky_way p {
+        width: 100%;
+        margin: 0 0 15px 0;
+        font-size: 12px;
+    }
+    
+    .triangle_galaxy h4,
+    .galaxy_sombrero h4,
+    .andromeda_galaxy h4,
+    .milky_way h4 {
+        margin: 0 0 10px 0;
+        font-size: 18px;
+    }
+    
+    .triangle_galaxy a,
+    .galaxy_sombrero a,
+    .andromeda_galaxy a,
+    .milky_way a {
+        display: inline-block;
+        margin: 0;
+        width: auto;
+        padding: 8px 16px;
+        font-size: 11px;
+    }
+    
+    /* ФУТЕР */
+    footer {
+        padding: 40px 20px;
+        height: auto;
+    }
+    
+    footer nav {
+        margin: 0;
+    }
+    
+    footer nav ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    footer nav ul li {
+        margin: 0;
+    }
+    
+    footer nav ul li a {
+        font-size: 13px;
+    }
+}
+
+/* Маленькие телефоны (до 480px) */
+@media screen and (max-width: 480px) {
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .hero .start_work,
+    .hero .about {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    
+    .hero .about {
+        margin-left: auto;
+    }
+    
+    .background_photo h2 {
+        font-size: 28px;
+    }
+    
+    .text h2 {
+        font-size: 24px;
+    }
+    
+    .triangle_galaxy a,
+    .galaxy_sombrero a,
+    .andromeda_galaxy a,
+    .milky_way a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+/* ===== АДАПТИВНЫЙ ДИЗАЙН ДЛЯ IPHONE 15 ===== */
+
+@media screen and (max-width: 430px) {
+    
+    /* Общие настройки */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+    
+    /* ШАПКА */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 15px;
+        width: 100%;
+        max-width: 100%; /* Явно ограничиваем */
+        box-sizing: border-box;
+        margin: 0; /* Убираем возможные отступы */
+        left: 0; /* Прижимаем к левому краю */
+        right: 0; /* Прижимаем к правому краю */
+    }
+    
+    body header img {
+        margin: 0 0 20px 0;
+        max-width: 80px;
+        width: auto; /* Автоматическая ширина */
+    }
+    
+    header nav {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    header nav ul li {
+        margin: 0;
+    }
+    
+    header nav ul li a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    
+    /* HERO-БЛОК */
+    .hero {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden; /* Скрываем всё, что вылезает */
+        padding: 0 15px;
+        box-sizing: border-box;
+        margin: 0; /* Убираем отступы */
+        left: 0;
+    }
+    
+    .hero .project-name {
+        font-size: 16px;
+        margin: 40px 0 10px 0;
+        letter-spacing: 2px;
+        text-align: left;
+        width: 100%; /* На всю ширину */
+    }
+    
+    .hero .number {
+        margin: 0 0 10px 0;
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+        width: 100%;
+        margin: 10px 0 20px 0;
+        line-height: 1.1;
+    }
+    
+    .hero .start_work,
+    .hero .about {
+        margin: 10px 10px 10px 0;
+        padding: 10px 20px;
+        font-size: 14px;
+        display: inline-block;
+    }
+    
+    .hero .line {
+        width: 100%;
+        margin: 30px 0 0 0;
+        position: relative;
+        max-width: 100%;
+    }
+    
+    .hero .moon_info {
+        display: none;
+    }
+    
+    .hero .line_2 {
+        display: none;
+    }
+    
+    .hero .moon {
+        display: none;
+    }
+    
+    .hero .about_Space_Industries {
+        position: relative;
+        width: 100%;
+        margin: 20px 0;
+        left: auto;
+        top: auto;
+        font-size: 13px;
+        color: black;
+        line-height: 1.5;
+    }
+    
+    .hero .black_block {
+        display: none;
+    }
+    
+    /* КОНЦЕПЦИИ */
+    .concepts {
+        padding: 50px 15px;
+        margin-top: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    .info_table {
+        border: none;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+    }
+    
+    .about_concepts {
+        position: relative;
+        width: 100%;
+        margin: 0 0 20px 0;
+        left: auto;
+        top: auto;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+    
+    .corners,
+    .atom,
+    .sphere,
+    .black_hole,
+    .quantum_field {
+        display: none;
+    }
+    
+    .physics,
+    .chemistry,
+    .quantum_physics {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        left: auto;
+        top: auto;
+        padding: 25px 20px;
+        border-radius: 25px;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    
+    .physics {
+        background: rgba(0, 0, 0, 0.9);
+    }
+    
+    .chemistry {
+        margin-top: 0;
+    }
+    
+    .quantum_physics {
+        margin-top: 0;
+        background: #D9D9D9;
+    }
+    
+    .physics h3,
+    .chemistry h3,
+    .quantum_physics h3 {
+        font-size: 24px;
+        margin: 0 0 15px 0;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .physics p,
+    .chemistry p,
+    .quantum_physics p {
+        font-size: 14px;
+        margin: 0;
+        width: 100%;
+        line-height: 1.5;
+    }
+    
+    .quantum_physics p {
+        color: black;
+    }
+    
+    /* О SPACE INDUSTRIES */
+    .about_us {
+        margin-top: 0;
+        padding: 0 15px;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    .background_photo {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        border-radius: 25px;
+        background-size: cover;
+        background-position: center;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    
+    .background_photo h2 {
+        font-size: 36px;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        line-height: 1.1;
+        width: 100%;
+    }
+    
+    .background_photo p {
+        position: relative;
+        width: 100%;
+        margin: 30px 0 0 0;
+        left: auto;
+        bottom: auto;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    
+    /* МЕТОДЫ ФИЛЬТРАЦИИ */
+    .methods {
+        padding: 40px 15px;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    .methods img {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    /* ВЫБОР ГАЛАКТИК */
+    .new_galaxies {
+        padding: 30px 15px 60px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    .text {
+        width: 100%;
+        float: none;
+    }
+    
+    .text h2 {
+        font-size: 32px;
+        width: 100%;
+        line-height: 1.2;
+    }
+    
+    .text hr {
+        width: 100%;
+        margin: 20px 0;
+        max-width: 100%;
+    }
+    
+    .text p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .blocks_of_galaxies {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .triangle_galaxy,
+    .galaxy_sombrero,
+    .andromeda_galaxy,
+    .milky_way {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        position: relative;
+        left: 0; /* Принудительно слева */
+        right: 0; /* Принудительно справа */
+    }
+    
+    .triangle_galaxy p,
+    .galaxy_sombrero p,
+    .andromeda_galaxy p,
+    .milky_way p {
+        width: 100%;
+        margin: 0 0 15px 0;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+    
+    .triangle_galaxy h4,
+    .galaxy_sombrero h4,
+    .andromeda_galaxy h4,
+    .milky_way h4 {
+        margin: 0 0 15px 0;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    
+    .triangle_galaxy a,
+.galaxy_sombrero a,
+.andromeda_galaxy a,
+.milky_way a {
+    display: inline-block;
+    margin: 0;
+    width: auto;
+    min-width: 110px;
+    height: 30px; /* Фиксированная высота */
+    padding: 0 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px; /* ТОЧНО такая же, как высота кнопки */
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+    
+    .milky_way {
+        margin-top: 0;
+    }
+    
+    /* ФУТЕР */
+    footer {
+        padding: 40px 15px 60px;
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    footer nav {
+        margin: 0;
+        width: 100%;
+    }
+    
+    footer nav ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    footer nav ul li {
+        margin: 0;
+    }
+    
+    footer nav ul li a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+
+/* Диагностический класс - включите временно, чтобы найти проблемный элемент */
+.debug * {
+    outline: 1px solid red !important;
+}
+
+/* Для iPhone 15 Pro Max и больших моделей (430px - 440px) */
+@media screen and (min-width: 431px) and (max-width: 440px) {
+    
+    .hero h1 {
+        font-size: 40px;
+    }
+    
+    .physics h3,
+    .chemistry h3,
+    .quantum_physics h3 {
+        font-size: 26px;
+    }
+    
+    .background_photo h2 {
+        font-size: 42px;
+    }
+}
+
+/* Ландшафтная ориентация iPhone 15 */
+@media screen and (max-width: 932px) and (orientation: landscape) {
+    
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 25px;
+    }
+    
+    body header img {
+        margin: 0;
+    }
+    
+    header nav ul {
+        margin: 0;
+    }
+    
+    .hero h1 {
+        font-size: 42px;
+        width: 70%;
+    }
+    
+    .hero .moon_info {
+        width: 60%;
+    }
+    
+    .hero .about_Space_Industries {
+        width: 60%;
+    }
+    
+    .physics,
+    .chemistry,
+    .quantum_physics {
+        width: 48%;
+        display: inline-block;
+        margin: 1%;
+    }
+    
+    .blocks_of_galaxies {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .triangle_galaxy,
+    .galaxy_sombrero,
+    .andromeda_galaxy,
+    .milky_way {
+        width: 48%;
+    }
+}
+
+/* Анимации для плавности */
+.hero,
+.concepts,
+.about_us,
+.new_galaxies {
+    transition: all 0.3s ease;
+}
+
+/* Убираем лишние отступы */
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Для Safe Area iPhone 15 */
+@supports (padding: max(0px)) {
+    .hero,
+    .concepts,
+    .about_us,
+    .new_galaxies,
+    footer {
+        padding-left: max(15px, env(safe-area-inset-left));
+        padding-right: max(15px, env(safe-area-inset-right));
+    }
+    
+    header {
+        padding-top: max(20px, env(safe-area-inset-top));
+    }
+    
+    footer {
+        padding-bottom: max(40px, env(safe-area-inset-bottom));
+    }
+}
+
+/* Для очень больших экранов */
+@media screen and (min-width: 1920px) {
+    .hero h1 {
+        font-size: 72px;
+        width: 900px;
+    }
+    
+    .background_photo {
+        width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .methods img {
+        width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
