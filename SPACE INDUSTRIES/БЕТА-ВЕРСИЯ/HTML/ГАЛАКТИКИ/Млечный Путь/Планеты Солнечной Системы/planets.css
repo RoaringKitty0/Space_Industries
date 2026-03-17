@@ -1,0 +1,961 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Unbounded:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+/* ШАПКА САЙТА */
+
+header {
+    padding-top: 40px;
+    padding-bottom: 190px;
+    background: none;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 30px 40px;
+    vertical-align: middle;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color:white;
+    font-family: 'Sansation', sans-serif;
+    font-size: 13px;
+
+}
+
+header nav ul li a:hover {
+    color:rgb(121, 121, 121);
+    transition: 0.5s ease;
+}
+
+/* HERO-БЛОК */
+
+.hero {
+    background-color: black;
+    background-image: url(/БЕТА-ВЕРСИЯ/IMAGES/background\ \(.hero_Planets\).svg);
+    text-align: center;
+}
+
+.hero .h1 {
+    display: inline-block;
+}
+
+.hero p {
+    color: white;
+    font-size: 20px;
+    margin-top: 90px;
+}
+.hero .arrows {
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 110px;
+}
+
+/* ФОТО СХЕМЫ СОЛНЕЧНОЙ СИСТЕМЫ */
+
+.planets_scheme {
+    background: black;
+}
+
+.planets_scheme img {
+    width: 100%;
+}
+
+/* СПИСОК ПЛАНЕТ СОЛНЕЧНОЙ СИСТЕМЫ */
+
+.planets_select {
+    background: black;
+}
+.planets_select h2, p, a {
+    color: white;
+}
+
+/* МЕРКУРИЙ */
+
+.mercury {
+    background: #151515;
+    width: 700px;
+    height: 350px;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+.mercury h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-left: 40px;
+    display: inline-block;
+}
+.mercury .num {
+    margin-left: 330px;
+}
+
+.mercury p {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: justify;
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 610px;
+
+}
+
+.mercury a {
+    text-decoration: none;
+    background: #D9D9D9;
+    color: #151515;
+    padding: 10px 25px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+    border: 1px solid #D9D9D9;
+}
+
+.mercury a:hover {
+    transition: 0.5s ease;
+    border: 1px solid #D9D9D9;
+    background: #151515;
+    color: #D9D9D9;
+}
+
+/* ВЕНЕРА */
+
+.venus {
+    background: #D9D9D9;
+    width: 520px;
+    height: 330px;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.venus h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 25px;
+    display: inline-block;
+    color: #151515;
+}
+.venus .num {
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    margin: 0;
+    color: #151515;
+}
+
+.venus p {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify;
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 450px;
+    color: #151515;
+
+}
+
+.venus a {
+    text-decoration: none;
+    background: #151515;
+    color: #D9D9D9;
+    padding: 10px 25px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+    border: 1px solid #151515;
+}
+
+.venus a:hover {
+    transition: 0.5s ease;
+    border: 1px solid #151515;
+    background: #D9D9D9;
+    color: #151515;
+}
+
+/* ЗЕМЛЯ */
+
+.earth {
+    border: 1px solid #D9D9D9;
+    background: black;
+    width: 640px;
+    height: 330px;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.earth h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 25px;
+    display: inline-block;
+    color: #D9D9D9;
+}
+.earth .num {
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    margin: 0;
+    color: #D9D9D9;
+}
+
+.earth p {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify;
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 490px;
+    color: #D9D9D9;
+
+}
+
+.earth a {
+    text-decoration: none;
+    color: #D9D9D9;
+    padding: 10px 25px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+    border: 1px solid #D9D9D9;
+}
+
+.earth a:hover {
+    transition: 0.5s ease;
+    border: 1px solid #151515;
+    background: #D9D9D9;
+    color: #151515;
+}
+
+/* МАРС */
+
+.mars {
+    border: 1px solid #151515;
+    background: #151515;
+    width: 640px;
+    height: 330px;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.mars h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 25px;
+    display: inline-block;
+    color: #D9D9D9;
+}
+.mars .num {
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    margin: 0;
+    color: #D9D9D9;
+}
+
+.mars p {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify;
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 490px;
+    color: #D9D9D9;
+
+}
+
+.mars a {
+    text-decoration: none;
+    color: #D9D9D9;
+    padding: 10px 25px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+    border: 1px solid #D9D9D9;
+}
+
+.mars a:hover {
+    transition: 0.5s ease;
+    border: 1px solid #151515;
+    background: #D9D9D9;
+    color: #151515;
+}
+
+/* ЮПИТЕР */
+
+.jupiter {
+    border: 1px solid #D2D2D2;
+    background: #D2D2D2;
+    width: 700px;
+    height: 330px;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 60px;
+    position: relative;
+}
+
+.jupiter h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 25px;
+    display: inline-block;
+    color: #151515;
+}
+.jupiter .num {
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    margin: 0;
+    color: #151515;
+}
+
+.jupiter p {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify;
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 630px;
+    color: #151515;
+
+}
+
+.jupiter a {
+    text-decoration: none;
+    color: #D9D9D9;
+    padding: 10px 25px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    background: #151515;;
+    border: 1px solid #151515;
+}
+
+.jupiter a:hover {
+    transition: 0.5s ease;
+    border: 1px solid #151515;
+    background: #D2D2D2;
+    color: #151515;
+}
+
+/* САТУРН */
+
+.saturn {
+    border: 1px solid #D9D9D9;
+    width: 520px;
+    height: 330px;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.saturn h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 25px;
+    display: inline-block;
+    color: #D9D9D9;
+}
+.saturn .num {
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    margin: 0;
+    color: #D9D9D9;
+}
+
+.saturn p {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify;
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 450px;
+    color: #D9D9D9;
+
+}
+
+.saturn a {
+    text-decoration: none;
+    color: #D9D9D9;
+    padding: 10px 25px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+    border: 1px solid #D9D9D9;
+}
+
+.saturn a:hover {
+    transition: 0.5s ease;
+    border: 1px solid #151515;
+    background: #D9D9D9;
+    color: #151515;
+}
+
+/* УРАН */
+
+.uranus {
+    border: 1px solid #151515;
+    background: #151515;
+    width: 640px;
+    height: 330px;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.uranus h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 25px;
+    display: inline-block;
+    color: #D9D9D9;
+}
+.uranus .num {
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    margin: 0;
+    color: #D9D9D9;
+}
+
+.uranus p {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify;
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 490px;
+    color: #D9D9D9;
+
+}
+
+.uranus a {
+    text-decoration: none;
+    color: #D9D9D9;
+    padding: 10px 25px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+    border: 1px solid #D9D9D9;
+}
+
+.uranus a:hover {
+    transition: 0.5s ease;
+    border: 1px solid #151515;
+    background: #D9D9D9;
+    color: #151515;
+}
+
+/* НЕПТУН */
+
+.neptune {
+    background: #D9D9D9;
+    width: 620px;
+    height: 330px;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.neptune h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 25px;
+    display: inline-block;
+    color: #151515;
+}
+.neptune .num {
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    margin: 0;
+    color: #151515;
+}
+
+.neptune p {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify;
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 450px;
+    color: #151515;
+
+}
+
+.neptune a {
+    text-decoration: none;
+    background: #151515;
+    color: #D9D9D9;
+    padding: 10px 25px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+    border: 1px solid #151515;
+}
+
+.neptune a:hover {
+    transition: 0.5s ease;
+    border: 1px solid #151515;
+    background: #D9D9D9;
+    color: #151515;
+}
+
+footer {
+    background: black;
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+footer img {
+    width: 150px;
+    display: inline-block;
+}
+
+
+/* ===== АДАПТИВНЫЙ ДИЗАЙН ДЛЯ IPHONE 15 ===== */
+
+/* Предотвращаем горизонтальный скролл */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* ===== АДАПТИВНЫЙ ДИЗАЙН ДЛЯ IPHONE 15 ===== */
+
+/* Предотвращаем горизонтальный скролл */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Основные стили для мобильных */
+@media screen and (max-width: 430px) {
+    
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* ШАПКА - увеличил отступ сверху и убрал белую шапочку */
+    header {
+        padding: 40px 15px 80px; /* Увеличил верхний отступ до 40px */
+        background: none; /* Убираем белый фон, если был */
+        border: none; /* Убираем границы */
+    }
+    
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+    
+    header nav ul li {
+        margin: 0;
+        background: none; /* Убираем возможный фон */
+    }
+    
+    header nav ul li a {
+        font-size: 13px;
+        white-space: nowrap;
+        color: white;
+        text-decoration: none;
+        background: none; /* Убираем фон */
+        padding: 0; /* Убираем отступы */
+        border: none; /* Убираем границы */
+    }
+    
+    /* HERO-БЛОК */
+    .hero {
+        padding: 0 15px;
+    }
+    
+    .hero .h1 {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+    
+    .hero .arrows {
+        width: 10px;
+        margin: 40px 0 60px;
+    }
+    
+    /* СХЕМА СОЛНЕЧНОЙ СИСТЕМЫ */
+    .planets_scheme {
+        padding: 0 15px;
+    }
+    
+    .planets_scheme img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* СПИСОК ПЛАНЕТ */
+    .planets_select {
+        padding: 20px 15px 20px; /* Уменьшил нижний отступ */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Уменьшил gap между карточками */
+    }
+    
+    /* Общие стили для всех карточек планет */
+    .mercury,
+    .venus,
+    .earth,
+    .mars,
+    .jupiter,
+    .saturn,
+    .uranus,
+    .neptune {
+        width: 100% !important;
+        max-width: 400px;
+        height: auto !important;
+        min-height: 380px; /* Немного уменьшил мин. высоту */
+        margin: 0 !important;
+        padding: 20px 20px 15px; /* Уменьшил нижний padding */
+        position: relative;
+        border-radius: 35px;
+    }
+    
+    /* Заголовки планет - на одной линии с номерами */
+    .mercury h2,
+    .venus h2,
+    .earth h2,
+    .mars h2,
+    .jupiter h2,
+    .saturn h2,
+    .uranus h2,
+    .neptune h2 {
+        font-size: 32px !important;
+        margin: 5px 0 10px 0 !important; /* Уменьшил отступы */
+        display: inline-block;
+        width: auto;
+        max-width: 70%;
+    }
+    
+    /* Номера планет - справа на одной линии */
+    .mercury .num,
+    .venus .num,
+    .earth .num,
+    .mars .num,
+    .jupiter .num,
+    .saturn .num,
+    .uranus .num,
+    .neptune .num {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 32px !important;
+        margin: 0;
+        display: inline-block;
+        line-height: 1; /* Выравниваем по высоте */
+    }
+    
+    /* Текст описания */
+    .mercury p,
+    .venus p,
+    .earth p,
+    .mars p,
+    .jupiter p,
+    .saturn p,
+    .uranus p,
+    .neptune p {
+        width: 100% !important;
+        font-size: 14px !important;
+        margin: 10px 0 15px 0 !important; /* Уменьшил отступы */
+        line-height: 1.5;
+        clear: both; /* Сброс обтекания */
+    }
+    
+    /* Кнопки */
+    .mercury a,
+    .venus a,
+    .earth a,
+    .mars a,
+    .jupiter a,
+    .saturn a,
+    .uranus a,
+    .neptune a {
+        float: none;
+        display: inline-block;
+        margin: 5px 0 0 0 !important; /* Уменьшил отступ сверху и убрал снизу */
+        padding: 10px 22px; /* Немного уменьшил padding */
+        font-size: 14px;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: 0.5s ease;
+    }
+    
+    /* Специфические размеры для разных планет */
+    .mercury p,
+    .venus p,
+    .earth p,
+    .mars p,
+    .jupiter p,
+    .saturn p,
+    .uranus p,
+    .neptune p {
+        width: 100% !important;
+    }
+    
+    /* ФУТЕР */
+    footer {
+        padding: 30px 15px 20px; /* Уменьшил отступы */
+        text-align: center;
+    }
+    
+    footer img {
+        width: 120px;
+        height: auto;
+    }
+}
+
+/* Для очень маленьких телефонов (до 375px) */
+@media screen and (max-width: 375px) {
+    
+    /* ШАПКА */
+    header {
+        padding: 30px 15px 60px; /* Немного меньше, но все еще достаточно */
+    }
+    
+    header nav ul {
+        gap: 25px;
+    }
+    
+    .hero p {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    
+    .hero .arrows {
+        width: 50px;
+        margin: 30px 0 40px;
+    }
+    
+    .mercury,
+    .venus,
+    .earth,
+    .mars,
+    .jupiter,
+    .saturn,
+    .uranus,
+    .neptune {
+        min-height: 360px;
+        padding: 15px 15px 10px;
+    }
+    
+    .mercury h2,
+    .venus h2,
+    .earth h2,
+    .mars h2,
+    .jupiter h2,
+    .saturn h2,
+    .uranus h2,
+    .neptune h2 {
+        font-size: 28px !important;
+        margin: 0 0 8px 0 !important;
+    }
+    
+    .mercury .num,
+    .venus .num,
+    .earth .num,
+    .mars .num,
+    .jupiter .num,
+    .saturn .num,
+    .uranus .num,
+    .neptune .num {
+        font-size: 28px !important;
+        right: 15px;
+        top: 15px;
+    }
+    
+    .mercury p,
+    .venus p,
+    .earth p,
+    .mars p,
+    .jupiter p,
+    .saturn p,
+    .uranus p,
+    .neptune p {
+        font-size: 13px !important;
+        margin: 8px 0 12px 0 !important;
+    }
+    
+    .mercury a,
+    .venus a,
+    .earth a,
+    .mars a,
+    .jupiter a,
+    .saturn a,
+    .uranus a,
+    .neptune a {
+        padding: 8px 18px;
+        font-size: 13px;
+        margin: 0 0 0 0 !important;
+    }
+    
+    footer img {
+        width: 100px;
+    }
+}
+
+/* Ландшафтная ориентация */
+@media screen and (max-width: 932px) and (orientation: landscape) {
+    
+    header {
+        padding: 25px 15px 40px;
+    }
+    
+    .hero {
+        padding: 0 15px;
+    }
+    
+    .hero .h1 {
+        width: 70%;
+    }
+    
+    .hero p {
+        margin-top: 30px;
+    }
+    
+    .hero .arrows {
+        margin: 30px 0 40px;
+    }
+    
+    .planets_select {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px 15px 20px;
+    }
+    
+    .mercury,
+    .venus,
+    .earth,
+    .mars,
+    .jupiter,
+    .saturn,
+    .uranus,
+    .neptune {
+        width: calc(50% - 15px) !important;
+        max-width: 350px;
+        min-height: 350px;
+        margin: 0 !important;
+    }
+    
+    .mercury p,
+    .venus p,
+    .earth p,
+    .mars p,
+    .jupiter p,
+    .saturn p,
+    .uranus p,
+    .neptune p {
+        font-size: 13px !important;
+        margin: 8px 0 10px 0 !important;
+    }
+    
+    .mercury a,
+    .venus a,
+    .earth a,
+    .mars a,
+    .jupiter a,
+    .saturn a,
+    .uranus a,
+    .neptune a {
+        margin: 0 0 0 0 !important;
+    }
+}
+
+/* Safe Area для iPhone 15 */
+@supports (padding: max(0px)) {
+    header {
+        padding-top: max(40px, env(safe-area-inset-top));
+        padding-left: max(15px, env(safe-area-inset-left));
+        padding-right: max(15px, env(safe-area-inset-right));
+    }
+    
+    .hero {
+        padding-left: max(15px, env(safe-area-inset-left));
+        padding-right: max(15px, env(safe-area-inset-right));
+    }
+    
+    .planets_scheme {
+        padding-left: max(15px, env(safe-area-inset-left));
+        padding-right: max(15px, env(safe-area-inset-right));
+    }
+    
+    .planets_select {
+        padding-left: max(15px, env(safe-area-inset-left));
+        padding-right: max(15px, env(safe-area-inset-right));
+    }
+    
+    footer {
+        padding-bottom: max(20px, env(safe-area-inset-bottom));
+        padding-left: max(15px, env(safe-area-inset-left));
+        padding-right: max(15px, env(safe-area-inset-right));
+    }
+}
