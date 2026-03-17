@@ -306,7 +306,7 @@ header nav ul li a:hover {
     color: white;
 }
 .background_photo {
-    background: url(/БЕТА-ВЕРСИЯ/IMAGES/background\ \(who\ we\ are\).svg);
+    background: url(IMAGES/background\ \(who\ we\ are\).svg);
     width: 1120px;
     height: 493px;
     margin-left: 140px;
