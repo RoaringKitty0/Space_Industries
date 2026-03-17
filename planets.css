@@ -46,7 +46,7 @@ header nav ul li a:hover {
 
 .hero {
     background-color: black;
-    background-image: url(/БЕТА-ВЕРСИЯ/IMAGES/background\ \(.hero_Planets\).svg);
+    background-image: url(IMAGES/background\ \(.hero_Planets\).svg);
     text-align: center;
 }
 
